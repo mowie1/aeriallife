@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Lär dig poledance</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <a class="header" href="index.html">
+            <h1>Poledance</h1>
+        </a>
+        <ul class="menu">
+            <li><a href="tricks.html">Tricks</a></li>
+            <li><a href="level1-2.html">Level 1-2</a></li>
+            <li><a href="level3-4.html">Level 3-4</a></li>
+            <li><a href="level5-6.html">Level 5-6</a></li>
+        </ul>
+        <p>Här är träningsvideor</p>
+        <video id="dv1" width="auto" height="500" controls>
+            <source src="dv-1.mp4" type="video/mp4">
+        </video>
+        <ul class="videoButtons">
+            <li><button onclick="loop()" type="button">Loop</button></li>
+            <li><button onclick="noLoop()" type="button">No loop</button></li>
+            <li><button onclick="slowmotion()" type="button">Slowmotion</button></li>
+            <li><button onclick="noSlowmotion()" type="button">No slowmotion</button></li>
+        </ul>
+        <button onclick="chooseVideo('chairspinWalk.mp4')" type="button">Chairspin walk</button>
+        <script src="poledance.js"></script>
+    </body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Lär dig poledance</title>
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div style='position:relative; margin-top:0px;'>
+            <a href="index.html">
+                <img src='pd-logo.png' style='position:absolute; top:0; left:0;' alt='poledance logo' class="pdLogo"/>
+            </a>
+        </div>
+        <ul class="headerMenu">
+            <li>
+                <a class="header" href="index.html">AerialLife</a>
+            </li>
+        </ul>
+        <div class="flex-menu">
+            <a class="menu-link" href="level1-2.html">Level 1-2</a>
+            <a class="menu-link" href="level3-4.html">Level 3-4</a>
+            <a class="menu-link" href="level5-6.html">Level 5-6</a>
+        </div>
+    </nav>
+
+    <div id="pd1" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav('pd1')">&times;</a>
+        <div class="overlay-content">
+            <div class="curtainRow">
+                <div class="curtainColumn">
+                    <div class="container">
+                        <ul class="curtainContent">
+                            <li><video id="v-pd1" width="480" height="auto" controls>
+                                    <source src="dv-1.mp4" type="video/mp4"></video>
+                            </li>
+                        </ul>
+                        <ul class="toggleButtons">
+                            <li>
+                                <input type="checkbox" class="inputCB" id="cbL1" onclick="changeLoop('v-pd1', 'cbL1')">
+                                <label for="cbL1" class="labelCB"><img src="repeat-icon.png" alt="repeat-icon">
+                                </label>
+                            </li>
+                            <li>
+                                <input type="checkbox" class="inputCB" id="cbS1"
+                                    onclick="changeSlowmotion('v-pd1', 'cbS1')">
+                                <label for="cbS1" class="labelCB"><img src="slowmotion-icon.png" alt="slowmotion-icon">
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="curtainColumn">
+                    <ul class="curtainText">
+                        <li>
+                            <p>
+                                sofjsifsdifsn sijfsp spdijf <br>
+                                bsfijv idsj sij odi disho idbv <br>
+                                sjbf sijbfsib fsiub cizb udbs ovbo i dv <br>
+                                doihvs ishd isoh udv uds unf idsb db
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="hej" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav('hej')">&times;</a>
+        <div class="overlay-content">
+            <div class="curtainRow">
+                <div class="curtainColumn">
+                    <div class="container">
+                        <ul class="curtainContent">
+                            <li><video id="hallå" width="480" height="auto" controls>
+                                    <source src="chairspinWalk.mp4" type="video/mp4"></video>
+                            </li>
+                        </ul>
+                        <ul class="toggleButtons">
+                            <li>
+                                <input type="checkbox" class="inputCB" id="cbL2" onclick="changeLoop('hallå', 'cbL2')">
+                                <label for="cbL2" class="labelCB"><img src="repeat-icon.png" alt="repeat-icon">
+                                </label>
+                            </li>
+                            <li>
+                                <input type="checkbox" class="inputCB" id="cbS2"
+                                    onclick="changeSlowmotion('hallå', 'cbS2')">
+                                <label for="cbS2" class="labelCB"><img src="slowmotion-icon.png" alt="slowmotion-icon">
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="curtainColumn">
+                    <ul class="curtainText">
+                        <li>
+                            <p>
+                                sofjsifsdifsn sijfsp spdijf <br>
+                                bsfijv idsj sij odi disho idbv <br>
+                                sjbf sijbfsib fsiub cizb udbs ovbo i dv <br>
+                                doihvs ishd isoh udv uds unf idsb db
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="levelRow">
+            <div class="levelColumn">
+                <h2>Level 5</h2>
+                <ul class="trickMenu">
+                    <li><span style="cursor:pointer" onclick="openNav('pd1')">&#9776; Dance video 1</span></li>
+                    <li><span style="cursor:pointer" onclick="openNav('pd2')">&#9776; Chairspin Walk</span></li>
+                </ul>
+            </div>
+            <div class="levelColumn">
+                <h2>Level 6</h2>
+            </div>
+        </div>
+    </div>
+
+    <script src="poledance.js"></script>
+</body>
+
+</html>
