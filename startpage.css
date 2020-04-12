@@ -27,16 +27,14 @@
     bottom: calc(50% - (250px/2));
     left: 50%;
     width: 40%;
-    background-color: rgb(255, 255, 255, 0.4);
     border-radius: 10px;
     padding: 0 15px;
 }
 
 /*Responsive layout for mobile*/
 /*MÅSTE FIXAS*/
-@media (max-width: 600px) {
+@media (max-width: 800px) {
     .textPic {
-        background-color: red;
         position: relative;
         margin: 20px 10px;
         bottom: 0;

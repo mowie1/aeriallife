@@ -60,6 +60,10 @@ p {
     .flex-menu {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+    }
+    .menu-link {
+        text-align: center;
     }
 }
 
