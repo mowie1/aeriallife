@@ -64,6 +64,8 @@ p {
     }
     .menu-link {
         text-align: center;
+        margin-left: 30%;
+        margin-right: 30%;
     }
 }
 
@@ -150,6 +152,9 @@ nav ul {
     .box {
         width: 100%;
     }
+    .levelColumn {
+        width: 90%;
+    }
 }
 
 /*Dropdown menu for tricks*/
@@ -215,7 +220,7 @@ nav ul {
     width: 50%;
     padding: 10px;
 }
-/*Remove floats where columns end*/
+/*Remove floats where columns end for video*/
 .curtainRow:after {
     content: "";
     display: table;
