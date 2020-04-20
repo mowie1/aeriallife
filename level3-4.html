@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <nav>
+    <nav class="menuBorder">
         <div style='position:relative; margin-top:0px;'>
             <a href="index.html">
                 <img src='pictures/pd-logo.png' style='position:absolute; top:0; left:0;' alt='poledance logo' class="pdLogo"/>
@@ -28,27 +28,30 @@
         </div>
     </nav>
 
-    <div id="pd1" class="overlay">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav('pd1')">&times;</a>
+
+    <div id="pd3-gemini" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav('pd3-gemini')">&times;</a>
         <div class="overlay-content">
-            <div class="curtainRow">
+            <div class="curtain">
                 <div class="curtainColumn">
                     <div class="container">
                         <ul class="curtainContent">
-                            <li><video id="v-pd1" width="480" height="auto" controls>
-                                    <source src="dv-1.mp4" type="video/mp4"></video>
+                            <li><video id="v-pd3-gemini" width="480" height="auto" controls preload="none" poster="pictures/pd3-gemini.png">
+                                    <source src="videos/pd3-gemini.mp4" type="video/mp4"></video>
                             </li>
                         </ul>
-                        <ul class="toggleButtons">
+                        <ul class="videoButtons">
                             <li>
-                                <input type="checkbox" class="inputCB" id="cbL1" onclick="changeLoop('v-pd1', 'cbL1')">
-                                <label for="cbL1" class="labelCB"><img src="repeat-icon.png" alt="repeat-icon">
+                                <input type="checkbox" class="inputVB" id="loop2"
+                                    onclick="changeLoop('v-pd3-gemini', 'loop2')">
+                                <label for="loop2" class="labelVB"><img src="pictures/repeat-icon.png" alt="repeat-icon">
                                 </label>
                             </li>
                             <li>
-                                <input type="checkbox" class="inputCB" id="cbS1"
-                                    onclick="changeSlowmotion('v-pd1', 'cbS1')">
-                                <label for="cbS1" class="labelCB"><img src="slowmotion-icon.png" alt="slowmotion-icon">
+                                <input type="checkbox" class="inputVB" id="slowmotion2"
+                                    onclick="changeSlowmotion('v-pd3-gemini', 'slowmotion2')">
+                                <label for="slowmotion2" class="labelVB"><img src="pictures/slowmotion-icon.png"
+                                        alt="slowmotion-icon">
                                 </label>
                             </li>
                         </ul>
@@ -70,27 +73,29 @@
         </div>
     </div>
 
-    <div id="pd2" class="overlay">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav('pd2')">&times;</a>
+    <div id="pd3-gini" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav('pd3-gini')">&times;</a>
         <div class="overlay-content">
-            <div class="curtainRow">
+            <div class="curtain">
                 <div class="curtainColumn">
                     <div class="container">
                         <ul class="curtainContent">
-                            <li><video id="v-pd2" width="480" height="auto" controls>
-                                    <source src="chairspinWalk.mp4" type="video/mp4"></video>
+                            <li><video id="v-pd3-gini" width="480" height="auto" controls preload="none" poster="pictures/pd3-gini.png">
+                                    <source src="videos/pd3-gini.mp4" type="video/mp4"></video>
                             </li>
                         </ul>
-                        <ul class="toggleButtons">
+                        <ul class="videoButtons">
                             <li>
-                                <input type="checkbox" class="inputCB" id="cbL2" onclick="changeLoop('v-pd2', 'cbL2')">
-                                <label for="cbL2" class="labelCB"><img src="repeat-icon.png" alt="repeat-icon">
+                                <input type="checkbox" class="inputVB" id="loop3"
+                                    onclick="changeLoop('v-pd3-gini', 'loop3')">
+                                <label for="loop3" class="labelVB"><img src="pictures/repeat-icon.png" alt="repeat-icon">
                                 </label>
                             </li>
                             <li>
-                                <input type="checkbox" class="inputCB" id="cbS2"
-                                    onclick="changeSlowmotion('v-pd2', 'cbS2')">
-                                <label for="cbS2" class="labelCB"><img src="slowmotion-icon.png" alt="slowmotion-icon">
+                                <input type="checkbox" class="inputVB" id="slowmotion3"
+                                    onclick="changeSlowmotion('v-pd3-gini', 'slowmotion3')">
+                                <label for="slowmotion3" class="labelVB"><img src="pictures/slowmotion-icon.png"
+                                        alt="slowmotion-icon">
                                 </label>
                             </li>
                         </ul>
@@ -112,37 +117,473 @@
         </div>
     </div>
 
-
-
-
-    <!--<div id="pd2" class="overlay">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav('pd2')">&times;</a>
-            <div class="overlay-content">
-                <ul class="curtainContent">
-                    <li><video class="pdVideo" width="auto" height="500" controls>
-                        <source src="chairspinWalk.mp4" type="video/mp4"></video>
-                    </li>
-                    <li><p>hrd hedhb gbsb</p></li>
-                </ul>
-                <ul class="videoButtons">
-                    <li><button onclick="loop()" type="button">Loop</button></li>
-                    <li><button onclick="noLoop()" type="button">No loop</button></li>
-                    <li><button onclick="slowmotion()" type="button">Slowmotion</button></li>
-                    <li><button onclick="noSlowmotion()" type="button">No slowmotion</button></li>
-                </ul>
+    <div id="pd3-hero" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav('pd3-hero')">&times;</a>
+        <div class="overlay-content">
+            <div class="curtain">
+                <div class="curtainColumn">
+                    <div class="container">
+                        <ul class="curtainContent">
+                            <li><video id="v-pd3-hero" width="480" height="auto" controls preload="none" poster="pictures/pd3-hero.png">
+                                    <source src="videos/pd3-hero.mp4" type="video/mp4"></video>
+                            </li>
+                        </ul>
+                        <ul class="videoButtons">
+                            <li>
+                                <input type="checkbox" class="inputVB" id="loop4"
+                                    onclick="changeLoop('v-pd3-hero', 'loop4')">
+                                <label for="loop4" class="labelVB"><img src="pictures/repeat-icon.png" alt="repeat-icon">
+                                </label>
+                            </li>
+                            <li>
+                                <input type="checkbox" class="inputVB" id="slowmotion4"
+                                    onclick="changeSlowmotion('v-pd3-hero', 'slowmotion4')">
+                                <label for="slowmotion4" class="labelVB"><img src="pictures/slowmotion-icon.png"
+                                        alt="slowmotion-icon">
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="curtainColumn">
+                    <ul class="curtainText">
+                        <li>
+                            <p>
+                                sofjsifsdifsn sijfsp spdijf <br>
+                                bsfijv idsj sij odi disho idbv <br>
+                                sjbf sijbfsib fsiub cizb udbs ovbo i dv <br>
+                                doihvs ishd isoh udv uds unf idsb db
+                            </p>
+                        </li>
+                    </ul>
+                </div>
             </div>
-          </div>-->
+        </div>
+    </div>
+
+    <div id="pd3-invert" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav('pd3-invert')">&times;</a>
+        <div class="overlay-content">
+            <div class="curtain">
+                <div class="curtainColumn">
+                    <div class="container">
+                        <ul class="curtainContent">
+                            <li><video id="v-pd3-invert" width="480" height="auto" controls preload="none" poster="pictures/pd3-invert.png">
+                                    <source src="videos/pd3-invert.mp4" type="video/mp4"></video>
+                            </li>
+                        </ul>
+                        <ul class="videoButtons">
+                            <li>
+                                <input type="checkbox" class="inputVB" id="Loop5"
+                                    onclick="changeLoop('v-pd3-invert', 'Loop5')">
+                                <label for="Loop5" class="labelVB"><img src="pictures/repeat-icon.png" alt="repeat-icon">
+                                </label>
+                            </li>
+                            <li>
+                                <input type="checkbox" class="inputVB" id="Slowmotion5"
+                                    onclick="changeSlowmotion('v-pd3-invert', 'Slowmotion5')">
+                                <label for="Slowmotion5" class="labelVB"><img src="pictures/slowmotion-icon.png"
+                                        alt="slowmotion-icon">
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="curtainColumn">
+                    <ul class="curtainText">
+                        <li>
+                            <p>
+                                sofjsifsdifsn sijfsp spdijf <br>
+                                bsfijv idsj sij odi disho idbv <br>
+                                sjbf sijbfsib fsiub cizb udbs ovbo i dv <br>
+                                doihvs ishd isoh udv uds unf idsb db
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="pd3-invertedCrucifix" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav('pd3-invertedCrucifix')">&times;</a>
+        <div class="overlay-content">
+            <div class="curtain">
+                <div class="curtainColumn">
+                    <div class="container">
+                        <ul class="curtainContent">
+                            <li><video id="v-pd3-invertedCrucifix" width="480" height="auto" controls preload="none" poster="pictures/pd3-invertedCrucifix.png">
+                                    <source src="videos/pd3-invertedCrucifix.mp4" type="video/mp4"></video>
+                            </li>
+                        </ul>
+                        <ul class="videoButtons">
+                            <li>
+                                <input type="checkbox" class="inputVB" id="loop6"
+                                    onclick="changeLoop('v-pd3-invertedCrucifix', 'loop6')">
+                                <label for="loop6" class="labelVB"><img src="pictures/repeat-icon.png" alt="repeat-icon">
+                                </label>
+                            </li>
+                            <li>
+                                <input type="checkbox" class="inputVB" id="slowmotion6"
+                                    onclick="changeSlowmotion('v-pd3-invertedCrucifix', 'slowmotion6')">
+                                <label for="slowmotion6" class="labelVB"><img src="pictures/slowmotion-icon.png"
+                                        alt="slowmotion-icon">
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="curtainColumn">
+                    <ul class="curtainText">
+                        <li>
+                            <p>
+                                sofjsifsdifsn sijfsp spdijf <br>
+                                bsfijv idsj sij odi disho idbv <br>
+                                sjbf sijbfsib fsiub cizb udbs ovbo i dv <br>
+                                doihvs ishd isoh udv uds unf idsb db
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="pd3-sunwheel" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav('pd3-sunwheel')">&times;</a>
+        <div class="overlay-content">
+            <div class="curtain">
+                <div class="curtainColumn">
+                    <div class="container">
+                        <ul class="curtainContent">
+                            <li><video id="v-pd3-sunwheel" width="480" height="auto" controls preload="none" poster="pictures/pd3-sunwheel.png">
+                                    <source src="videos/pd3-sunwheel.mp4" type="video/mp4"></video>
+                            </li>
+                        </ul>
+                        <ul class="videoButtons">
+                            <li>
+                                <input type="checkbox" class="inputVB" id="loop11"
+                                    onclick="changeLoop('v-pd3-sunwheel', 'loop11')">
+                                <label for="loop11" class="labelVB"><img src="pictures/repeat-icon.png" alt="repeat-icon">
+                                </label>
+                            </li>
+                            <li>
+                                <input type="checkbox" class="inputVB" id="slowmotion11"
+                                    onclick="changeSlowmotion('v-pd3-sunwheel', 'slowmotion11')">
+                                <label for="slowmotion11" class="labelVB"><img src="pictures/slowmotion-icon.png"
+                                        alt="slowmotion-icon">
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="curtainColumn">
+                    <ul class="curtainText">
+                        <li>
+                            <p>
+                                sofjsifsdifsn sijfsp spdijf <br>
+                                bsfijv idsj sij odi disho idbv <br>
+                                sjbf sijbfsib fsiub cizb udbs ovbo i dv <br>
+                                doihvs ishd isoh udv uds unf idsb db
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="pd3-divasit" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav('pd3-divasit')">&times;</a>
+        <div class="overlay-content">
+            <div class="curtain">
+                <div class="curtainColumn">
+                    <div class="container">
+                        <ul class="curtainContent">
+                            <li><video id="v-pd3-divasit" width="480" height="auto" controls preload="none" poster="pictures/pd3-divasit.png">
+                                    <source src="videos/pd3-divasit.mp4" type="video/mp4"></video>
+                            </li>
+                        </ul>
+                        <ul class="videoButtons">
+                            <li>
+                                <input type="checkbox" class="inputVB" id="Loop12"
+                                    onclick="changeLoop('v-pd3-divasit', 'Loop12')">
+                                <label for="Loop12" class="labelVB"><img src="pictures/repeat-icon.png" alt="repeat-icon">
+                                </label>
+                            </li>
+                            <li>
+                                <input type="checkbox" class="inputVB" id="Slowmotion12"
+                                    onclick="changeSlowmotion('v-pd3-divasit', 'Slowmotion12')">
+                                <label for="Slowmotion12" class="labelVB"><img src="pictures/slowmotion-icon.png"
+                                        alt="slowmotion-icon">
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="curtainColumn">
+                    <ul class="curtainText">
+                        <li>
+                            <p>
+                                sofjsifsdifsn sijfsp spdijf <br>
+                                bsfijv idsj sij odi disho idbv <br>
+                                sjbf sijbfsib fsiub cizb udbs ovbo i dv <br>
+                                doihvs ishd isoh udv uds unf idsb db
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="pd4-airCirclespin" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav('pd4-airCirclespin')">&times;</a>
+        <div class="overlay-content">
+            <div class="curtain">
+                <div class="curtainColumn">
+                    <div class="container">
+                        <ul class="curtainContent">
+                            <li><video id="v-pd4-airCirclespin" width="480" height="auto" controls preload="none" poster="pictures/pd4-airCircleSpin.png">
+                                    <source src="videos/pd4-airCirclespin.mp4" type="video/mp4"></video>
+                            </li>
+                        </ul>
+                        <ul class="videoButtons">
+                            <li>
+                                <input type="checkbox" class="inputVB" id="loop7"
+                                    onclick="changeLoop('v-pd4-airCirclespin', 'loop7')">
+                                <label for="loop7" class="labelVB"><img src="pictures/repeat-icon.png" alt="repeat-icon">
+                                </label>
+                            </li>
+                            <li>
+                                <input type="checkbox" class="inputVB" id="slowmotion7"
+                                    onclick="changeSlowmotion('v-pd4-airCirclespin', 'slowmotion7')">
+                                <label for="slowmotion7" class="labelVB"><img src="pictures/slowmotion-icon.png"
+                                        alt="slowmotion-icon">
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="curtainColumn">
+                    <ul class="curtainText">
+                        <li>
+                            <p>
+                                sofjsifsdifsn sijfsp spdijf <br>
+                                bsfijv idsj sij odi disho idbv <br>
+                                sjbf sijbfsib fsiub cizb udbs ovbo i dv <br>
+                                doihvs ishd isoh udv uds unf idsb db
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="pd4-butterfly" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav('pd4-butterfly')">&times;</a>
+        <div class="overlay-content">
+            <div class="curtain">
+                <div class="curtainColumn">
+                    <div class="container">
+                        <ul class="curtainContent">
+                            <li><video id="v-pd4-butterfly" width="480" height="auto" controls preload="none" poster="pictures/pd4-butterfly.png">
+                                    <source src="videos/pd4-butterfly.mp4" type="video/mp4"></video>
+                            </li>
+                        </ul>
+                        <ul class="videoButtons">
+                            <li>
+                                <input type="checkbox" class="inputVB" id="loop8"
+                                    onclick="changeLoop('v-pd4-butterfly', 'loop8')">
+                                <label for="loop8" class="labelVB"><img src="pictures/repeat-icon.png" alt="repeat-icon">
+                                </label>
+                            </li>
+                            <li>
+                                <input type="checkbox" class="inputVB" id="slowmotion8"
+                                    onclick="changeSlowmotion('v-pd4-butterfly', 'slowmotion8')">
+                                <label for="slowmotion8" class="labelVB"><img src="pictures/slowmotion-icon.png"
+                                        alt="slowmotion-icon">
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="curtainColumn">
+                    <ul class="curtainText">
+                        <li>
+                            <p>
+                                sofjsifsdifsn sijfsp spdijf <br>
+                                bsfijv idsj sij odi disho idbv <br>
+                                sjbf sijbfsib fsiub cizb udbs ovbo i dv <br>
+                                doihvs ishd isoh udv uds unf idsb db
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="pd4-jamilla" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav('pd4-jamilla')">&times;</a>
+        <div class="overlay-content">
+            <div class="curtain">
+                <div class="curtainColumn">
+                    <div class="container">
+                        <ul class="curtainContent">
+                            <li><video id="v-pd4-jamilla" width="480" height="auto" controls preload="none" poster="pictures/pd4-jamilla.png">
+                                    <source src="videos/pd4-jamilla.mp4" type="video/mp4"></video>
+                            </li>
+                        </ul>
+                        <ul class="videoButtons">
+                            <li>
+                                <input type="checkbox" class="inputVB" id="Loop9"
+                                    onclick="changeLoop('v-pd4-jamilla', 'Loop9')">
+                                <label for="Loop9" class="labelVB"><img src="pictures/repeat-icon.png" alt="repeat-icon">
+                                </label>
+                            </li>
+                            <li>
+                                <input type="checkbox" class="inputVB" id="Slowmotion9"
+                                    onclick="changeSlowmotion('v-pd4-jamilla', 'Slowmotion9')">
+                                <label for="Slowmotion9" class="labelVB"><img src="pictures/slowmotion-icon.png"
+                                        alt="slowmotion-icon">
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="curtainColumn">
+                    <ul class="curtainText">
+                        <li>
+                            <p>
+                                sofjsifsdifsn sijfsp spdijf <br>
+                                bsfijv idsj sij odi disho idbv <br>
+                                sjbf sijbfsib fsiub cizb udbs ovbo i dv <br>
+                                doihvs ishd isoh udv uds unf idsb db
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="pd4-keyhold" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav('pd4-keyhold')">&times;</a>
+        <div class="overlay-content">
+            <div class="curtain">
+                <div class="curtainColumn">
+                    <div class="container">
+                        <ul class="curtainContent">
+                            <li><video id="v-pd4-keyhold" width="480" height="auto" controls preload="none" poster="pictures/pd4-keyhold.png">
+                                    <source src="videos/pd4-keyhold.mp4" type="video/mp4"></video>
+                            </li>
+                        </ul>
+                        <ul class="videoButtons">
+                            <li>
+                                <input type="checkbox" class="inputVB" id="loop10"
+                                    onclick="changeLoop('v-pd4-keyhold', 'loop10')">
+                                <label for="loop10" class="labelVB"><img src="pictures/repeat-icon.png" alt="repeat-icon">
+                                </label>
+                            </li>
+                            <li>
+                                <input type="checkbox" class="inputVB" id="slowmotion10"
+                                    onclick="changeSlowmotion('v-pd4-keyhold', 'slowmotion10')">
+                                <label for="slowmotion10" class="labelVB"><img src="pictures/slowmotion-icon.png"
+                                        alt="slowmotion-icon">
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="curtainColumn">
+                    <ul class="curtainText">
+                        <li>
+                            <p>
+                                sofjsifsdifsn sijfsp spdijf <br>
+                                bsfijv idsj sij odi disho idbv <br>
+                                sjbf sijbfsib fsiub cizb udbs ovbo i dv <br>
+                                doihvs ishd isoh udv uds unf idsb db
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="pd4-crosskneeRelease" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav('pd4-crosskneeRelease')">&times;</a>
+        <div class="overlay-content">
+            <div class="curtain">
+                <div class="curtainColumn">
+                    <div class="container">
+                        <ul class="curtainContent">
+                            <li><video id="v-pd4-crosskneeRelease" width="480" height="auto" controls preload="none" poster="pictures/pd4-crosskneeRelease.png">
+                                    <source src="videos/pd4-crosskneeRelease.mp4" type="video/mp4"></video>
+                            </li>
+                        </ul>
+                        <ul class="videoButtons">
+                            <li>
+                                <input type="checkbox" class="inputVB" id="loop1"
+                                    onclick="changeLoop('v-pd4-crosskneeRelease', 'loop1')">
+                                <label for="loop1" class="labelVB"><img src="pictures/repeat-icon.png" alt="repeat-icon">
+                                </label>
+                            </li>
+                            <li>
+                                <input type="checkbox" class="inputVB" id="slowmotion1"
+                                    onclick="changeSlowmotion('v-pd4-crosskneeRelease', 'slowmotion1')">
+                                <label for="slowmotion1" class="labelVB"><img src="pictures/slowmotion-icon.png"
+                                        alt="slowmotion-icon">
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="curtainColumn">
+                    <ul class="curtainText">
+                        <li>
+                            <p>
+                                sofjsifsdifsn sijfsp spdijf <br>
+                                bsfijv idsj sij odi disho idbv <br>
+                                sjbf sijbfsib fsiub cizb udbs ovbo i dv <br>
+                                doihvs ishd isoh udv uds unf idsb db
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="content">
         <div class="levelRow">
-            <div class="levelColumn">
-                <h2>Level 3</h2>
-                <ul class="trickMenu">
-                    <li><span style="cursor:pointer" onclick="openNav('pd1')">&#9776; Dance video 1</span></li>
-                    <li><span style="cursor:pointer" onclick="openNav('pd2')">&#9776; Chairspin Walk</span></li>
-                </ul>
+            <div class="box">
+                <div class="levelColumn">
+                    <h2>Level 3</h2>
+                    <ul class="trickMenu">
+                        <li onclick="openNav('pd3-gemini')"><span>Gemini</span></li>
+                        <li onclick="openNav('pd3-gini')"><span>Gini</span></li>
+                        <li onclick="openNav('pd3-hero')"><span>Hero</span></li>
+                        <li onclick="openNav('pd3-invert')"><span>Invert</span></li>
+                        <li onclick="openNav('pd3-invertedCrucifix')"><span>Inverted Crucifix</span></li>
+                        <li onclick="openNav('pd3-sunwheel')"><span>Sunwheel</span></li>
+                        <li onclick="openNav('pd3-divasit')"><span>Divasit</span></li>
+                    </ul>
+                </div>
             </div>
-            <div class="levelColumn">
-                <h2>Level 4</h2>
+            <div class="box">
+                <div class="levelColumn">
+                    <h2>Level 4</h2>
+                    <ul class="trickMenu">
+                        <li onclick="openNav('pd4-airCirclespin')"><span>Air Circlespin</span></li>
+                        <li onclick="openNav('pd4-butterfly')"><span>Butterfly</span></li>
+                        <li onclick="openNav('pd4-jamilla')"><span>Jamilla</span></li>
+                        <li onclick="openNav('pd4-keyhold')"><span>Keyhold</span></li>
+                        <li onclick="openNav('pd4-crosskneeRelease')"><span>Crossknee Release</span></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
