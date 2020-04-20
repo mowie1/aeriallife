@@ -1,3 +1,5 @@
+/*Stylesheet som gäller för alla sidor*/
+
 * {
     box-sizing: border-box;
 }
@@ -23,12 +25,37 @@ p {
     font-size: 18px;
 }
 
-/*För menyn*/
+/*Poledance Logo*/
+.pdLogo {
+    max-width: 12%;
+}
+
+/*För header*/
+nav ul {
+    padding-inline-start: 0;
+    list-style-type: none;
+}
+.headerMenu {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+.headerMenu li {
+    display: inline;
+}
+.headerMenu li a {
+    text-decoration: none;
+    color: black;
+    font-size: 50px;
+    padding: 0px 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/*För menyn med nivåer*/
 .menuBorder {
     margin-bottom: 40px;
     padding-bottom: 20px;
 }
-
 .flex-menu {
     display: flex;
     flex-wrap: wrap;
@@ -67,248 +94,9 @@ p {
         margin-left: 20%;
         margin-right: 20%;
     }
-}
-
-/*För header*/
-nav ul {
-    padding-inline-start: 0;
-    list-style-type: none;
-}
-.headerMenu {
-    text-align: center;
-    margin-top: 30px;
-    margin-bottom: 40px;
-}
-.headerMenu li {
-    display: inline;
-}
-.headerMenu li a {
-    text-decoration: none;
-    color: black;
-    font-size: 50px;
-    padding: 0px 30px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-/*List of all the tricks*/
-.content {
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-.box {
-    width: 50%;
-    float: left;
-}
-
-.levelColumn h2 {
-    font-weight: 500;
-}
-
-.trickMenu {
-    list-style-type: none;
-    text-align: left;
-    margin: 0;
-    padding: 0;
-}
-
-.trickMenu li {
-    padding: 10px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 30px;
-    font-weight: 500;
-    background-color: #ffc6c7;
-    color: #33272a;
-    display: block;
-    margin-right: 0.6rem;
-    margin-bottom: 0.6rem;
-    padding: 5px 10px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.trickMenu li:hover {
-    box-shadow: 0 5px 15px -10px #000;
-    -webkit-transform: translate(0px, -4px);
-    -ms-transform: translate(0px, -4px);
-    transform: translate(0px, -4px);
-}
-
-.levelColumn {
-    width: 80%;
-    padding: 10%;
-    margin: .5em auto;
-    background-color: #faeee7;
-    border-radius: 20px;
-}
-/*Remove floats where columns end*/
-.levelRow:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-/*Responsive layout for mobile*/
-@media (max-width: 800px) {
-    .box {
-        width: 100%;
+    .menu-link:hover {
+        box-shadow: none;
+        transform: none;
+        background-color: #ffc6c7;
     }
-    .levelColumn {
-        width: 90%;
-    }
-}
-
-/*Dropdown menu for tricks*/
-.overlay {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: white;
-    overflow-x: hidden;
-    transition: 0.5s;
-}
-  
-.overlay-content {
-    position: relative;
-    top: 2%;
-    width: 100%;
-    margin-top: 30px;
-}
-
-/*Box för videospelare*/
-.container {
-    max-width: 500px;
-    background-color: white;
-    border-radius: 3px;
-    margin: 10px;
-    border: 1px solid black;
-}
-
-.curtainContent {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-
-.curtainContent li video {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    padding: 8px;
-}
-
-.curtainText {
-    list-style-type: none;
-    margin: 0;
-    padding-top: 50px;
-    padding-bottom: 0;
-}
-  
-.overlay .closebtn {
-    position: absolute;
-    top: 0px;
-    right: 45px;
-    font-size: 50px;
-}
-
-.curtainColumn {
-    float: left;
-    width: 50%;
-    padding: 10px;
-}
-/*Remove floats where columns end for video*/
-.curtainRow:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-/*Responsive layout for mobile*/
-@media (max-width: 800px) {
-    .curtainColumn {
-        width: 100%;
-    }
-}
-
-@media (max-width: 800px) {
-    .overlay .closebtn {
-        font-size: 40px;
-        top: 15px;
-        right: 35px;
-    }
-}
-
-@media (max-width: 800px) {
-    .curtainContent li {
-        text-align: center;
-        float: none;
-    }
-}
-
-/*Toggle button*/
-.toggleButtons {
-    list-style-type: none;
-}
-.toggleButtons li {
-    display: inline-block;
-}
-.inputCB[type="checkbox"] {
-    display: none;
-}
-.labelCB {
-    border: 1px solid #fff;
-    padding: 0px;
-    display: block;
-    position: relative;
-    margin-right: 30px;
-    cursor: pointer;
-}
-.labelCB:before {
-    background-color: white;
-    color: white;
-    content: " ";
-    display: block;
-    border-radius: 50%;
-    border: 1px solid grey;
-    position: absolute;
-    top: -5px;
-    left: -5px;
-    width: 25px;
-    height: 25px;
-    text-align: center;
-    line-height: 28px;
-    transition-duration: 0.4s;
-    transform: scale(0);
-}
-.labelCB img {
-    height: 40px;
-    width: 40px;
-    transition-duration: 0.2s;
-    transform-origin: 50% 50%;
-}
-:checked + .labelCB {
-    border-color: black;
-}
-:checked + .labelCB img {
-    transform: scale(0.9);
-    /* box-shadow: 0 0 5px #333; */
-    z-index: -1;
-}
-
-/*Videobuttons*/
-.videoButtons {
-    list-style-type: none;
-    margin: 0;
-    padding: 8px;
-}
-.videoButtons li {
-    display: inline;
-}
-
-/*Poledance Logo*/
-.pdLogo {
-    max-width: 12%;
 }
