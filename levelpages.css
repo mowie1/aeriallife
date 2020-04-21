@@ -107,6 +107,9 @@
     padding-top: 50px;
     padding-bottom: 0;
 }
+.curtainText p {
+    text-align: left;
+}
 .overlay .closebtn {
     position: absolute;
     top: 0px;
