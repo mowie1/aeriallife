@@ -102,9 +102,8 @@
     padding: 8px;
 }
 .curtainText {
-    list-style-type: none;
     margin: 0;
-    padding-top: 50px;
+    padding-top: 10px;
     padding-bottom: 0;
 }
 .curtainText p {
@@ -128,6 +127,11 @@
     clear: both;
 }
 /*Responsive layout for mobile*/
+@media (max-width: 800px) {
+    .curtainText {
+        margin-right: 20px;
+    }
+}
 @media (max-width: 800px) {
     .curtainColumn {
         width: 100%;
